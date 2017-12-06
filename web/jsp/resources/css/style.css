@@ -1,0 +1,58 @@
+header,
+main,
+footer {
+  padding-left: 240px;
+}
+
+body {
+  backgroud: white;
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+
+#credits li,
+#credits li a {
+  color: white;
+}
+
+#credits li a {
+  font-weight: bold;
+}
+
+.footer-copyright .container,
+.footer-copyright .container a {
+  color: #BCC2E2;
+}
+
+.fab-tip {
+  position: fixed;
+  right: 85px;
+  padding: 0px 0.5rem;
+  text-align: right;
+  background-color: #323232;
+  border-radius: 2px;
+  color: #FFF;
+  width: auto;
+}
+        
+.input-field input:focus + label {
+    color: #2196f3 !important;
+    }
+    /* label underline focus color */
+.row .input-field input:focus {
+    border-bottom: 1px solid #2196f3  !important;
+    box-shadow: 0 1px 0 0 #2196f3  !important
+}
+.checkbox-blue[type="checkbox"].filled-in:checked + label:after{
+    border: 2px solid #1565c0;
+    background-color: #2196f3;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #2196f3;
+}

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <!--Import Google Icon Font-->
+        <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>-->
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="resources/css/materialize.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="resources/css/default.css" rel="stylesheet" type="text/css" />
+        <link href="resources/css/cssLayout.css" rel="stylesheet" type="text/css" />
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+        
+            <div class="card-content">
+                <div class="left-align">
+                    <h:form id ="login-form">
+                        <div class="row">
+                            <div class="col s12 input-field">
+                                <h:inputText id="username" required="true" requiredMessage="UserName Requerido"/>
+                                <h:outputLabel for="username" value ="Username"/>
+                            </div>
+                            <div class="col s12 input-field">
+                                <h:inputText id="password" required="true" requiredMessage="Password Requerido"/>
+                                <h:outputLabel for="password" value ="Password"/>
+                            </div>
+                            <div class="col s12 input-field">
+                                <h:commandLink value="Login" styleClass="btn waves-effect waves-light"/>
+                            </div>
+                            <div class="col s12 input-field">
+                                
+                                    <h:selectOneMenu id="country" value="">
+                                        <f:selectItem itemLabel="Select One" itemValue="" />
+                                        <f:selectItem itemLabel="Xbox One" itemValue="Xbox One" />
+                                        <f:selectItem itemLabel="PS4" itemValue="PS4" />
+                                        <f:selectItem itemLabel="Wii U" itemValue="Wii U" />
+                                    </h:selectOneMenu>
+                            
+                               
+                            </div>
+                            
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+        
+
+        <div id="content" class="center_content">
+            <ui:insert name="content">Content</ui:insert>
+        </div>
+
+        <div id="bottom">
+            <ui:insert name="bottom">Bottom</ui:insert>
+        </div>
+
+      <!--Import jQuery before materialize.js-->
+      <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+      <script type="text/javascript" src="resources/js/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript" src="resources/js/materialize.js"></script>
+    </h:body>
+
+</html>
